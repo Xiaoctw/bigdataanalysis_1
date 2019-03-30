@@ -26,8 +26,6 @@ public class Standard {
         FileOutputFormat.setOutputPath(job,new Path("/home/xiao/文档/大数据分析/数据/D_Standard"));
         System.exit(job.waitForCompletion(true)?0:1);
     }
-
-
 }
  class StandardMapper extends Mapper<LongWritable, Text,Text,Text>{
     @Override
