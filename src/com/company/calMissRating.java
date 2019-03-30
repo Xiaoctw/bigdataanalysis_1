@@ -111,10 +111,6 @@ public class calMissRating {
             double dis1=Math.pow((o1.income-item.income),2)+Math.pow((o1.latitude-item.latitude),2)+Math.pow(o1.longitude-item.longitude,2);
             double dis2=Math.pow((o2.income-item.income),2)+Math.pow((o2.latitude-item.latitude),2)+Math.pow(o2.longitude-item.longitude,2);
           //  return (int) (dis1*100-dis2*100);
-//            if(dis1*100>=dis2*100){
-//                return 1;
-//            }
-//            return -1;
             return Double.compare(dis1, dis2);
         });
         return list.get(0).rating;
